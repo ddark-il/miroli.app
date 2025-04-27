@@ -1,0 +1,287 @@
+/* Increase spacing between paragraphs in FAQ section and add slight indentation */
+.faq-item p {
+    margin-bottom: 0.4rem; /* adds more vertical space */
+    margin-left: 1rem;     /* slight indentation to the right */
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Base Styles and Typography */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #FFFFFF;
+    color: #333333;
+    /* Enable smooth scrolling for anchor links */
+    scroll-behavior: smooth;
+}
+
+/* Global Link Styling */
+a {
+    color: #fe8500;           /* Use brand orange color for links */
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: #d47100;           /* Darker orange on hover/focus */
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f2f5f8 100%); /* subtle gradient */
+}
+
+.hero .logo {
+    max-width: 120px;
+    margin-bottom: 1rem;
+    border-radius: 20px; /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.hero .description {
+    font-size: 1.125rem;
+    color: #444444;
+    max-width: 600px;
+    margin: 0 auto 2rem;  /* center text block and add bottom margin */
+}
+
+.hero .appstore-btn {
+    width: 160px; /* sets the overall link width */
+    height: auto; /* ensures SVG or image auto-sizes its height */
+    cursor: pointer; /* show a pointer on hover */
+}
+
+.hero .appstore-btn:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+}
+
+/* Screenshots Section */
+.screenshots-section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.screenshots-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.screenshots-section p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 2rem;
+}
+
+/* Screenshots Container - horizontal scroll on small screens */
+.screenshots-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;  /* smooth scrolling on iOS */
+}
+
+.screenshots-container img {
+    flex: 0 0 auto;  /* do not shrink */
+    max-width: 80%;
+    height: auto;
+    margin: 0 0.5rem; /* horizontal space between images */
+    scroll-snap-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Hide scrollbar for the container (optional aesthetic improvement) */
+.screenshots-container::-webkit-scrollbar {
+    display: none;
+}
+.screenshots-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+/* Features Section (Icons Grid) */
+.features-section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.features-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 4rem; /* more space above icons */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 0; /* center and space from heading */
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: #fe8500; /* brand orange */
+    margin-bottom: 1rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #333333;
+    max-width: 240px; /* keep text narrower for readability */
+    margin: 0 auto;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 3rem 1rem;
+    background-color: #ffffff; /* white background for contrast */
+    max-width: 800px;
+    margin: 0 auto;  /* center horizontally */
+}
+
+.faq-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+/* Privacy Policy Section */
+.privacy-section {
+    background-color: #f9f9f9; /* differentiate from FAQ section */
+    padding: 3rem 1rem;
+}
+
+.privacy-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    text-align: center; /* keep heading centered */
+}
+
+.privacy-section p {
+    font-size: 1rem;
+    color: #555555;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.privacy-section ul {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: left;
+    color: #555555;
+    line-height: 1.6;
+    padding-left: 1.25rem; /* indentation for bullets */
+}
+
+.privacy-section li {
+    margin-bottom: 0.5rem; /* spacing between list items */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f8f8f8;
+}
+
+footer p {
+    color: #777777;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design: Styles for larger screens */
+@media (min-width: 768px) {
+    .hero {
+        padding: 6rem 2rem 4rem;
+    }
+
+    .hero .logo {
+        max-width: 150px;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero .description {
+        font-size: 1.125rem;
+    }
+
+    .screenshots-container {
+        justify-content: center; /* center images if container is wider */
+    }
+
+    .screenshots-container img {
+        max-width: 250px; /* limit image size on desktop */
+        margin: 0 1rem;
+    }
+}
+
+.top-right-link {
+    position: absolute;
+    top: 20px;      /* Adjust to your needs */
+    right: 20px;    /* Adjust to your needs */
+    font-size: 1rem;
+  }
+  .top-right-link a {
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  .top-right-link a:hover {
+    background-color: #f0f0f0;
+  }

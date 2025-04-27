@@ -1,1 +1,153 @@
-Under Construction
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Miroli – Share Your Moments</title>
+
+  <!-- Your own stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome 6.4.0 (free) without SRI for simplicity -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- Hero Section: App Logo, Description, CTA Button -->
+  <header class="hero">
+    <!-- NEW: Privacy Policy Link in top-right corner -->
+    <div class="top-right-link">
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+    <img src="logo.png" alt="Miroli logo" class="logo" />
+    <h1>Meet Miroli – Your Personal Photo Journal</h1>
+    <p class="description">
+      Miroli is an innovative photo-sharing app that lets you organize and share your moments effortlessly.
+      Enjoy a clean interface and powerful features to capture, inspire, and connect with a creative community.
+    </p>
+
+    <!-- Use official Apple badge -->
+    <a href="https://apps.apple.com/us/app/miroli/id6744886136">
+      <img src="apple-app-store-badge.svg"
+           alt="Download on the App Store"
+           style="width:160px; height:auto;" />
+    </a>
+  </header>
+
+  <!-- Screenshots Gallery Section -->
+  <main>
+    <section class="screenshots-section">
+      <h2>App Screenshots</h2>
+      <p>Take a look at what Miroli offers:</p>
+      <div class="screenshots-container">
+        <img src="scr1.jpg" alt="Miroli app screenshot 1" />
+        <img src="scr2.jpg" alt="Miroli app screenshot 2" />
+        <img src="scr3.jpg" alt="Miroli app screenshot 3" />
+      </div>
+    </section>
+
+    <!-- Features Section with Icons Grid -->
+    <section class="features-section">
+      <h2>Why Choose Miroli?</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <p>Seamlessly upload and update your posts from the app.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-brands fa-github"></i>
+          <p>Publish to GitHub Pages or AWS S3 Storage</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-users"></i>
+          <p>Follow and get inspired by other creators.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-wallet"></i>
+          <p>One-time payment, no hidden fees.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-ban"></i>
+          <p>No advertisements, ever.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-lock"></i>
+          <p>Your sensitive data stays private on your device.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-user-shield"></i>
+          <p>No personal data collected by Miroli.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <p>Ability to perform secure backup to iCloud.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>Profile Configuration Questions</h2>
+
+      <div class="faq-item">
+        <h3>How do I configure GitHub Pages?</h3>
+        <p>
+          Enable Pages: Go to your repository’s <strong>Settings</strong> → <strong>Pages</strong> and select the branch or folder for your site. 
+          For details, see 
+          <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site" target="_blank" rel="noopener">
+            Official GitHub Pages Docs
+          </a>.
+        </p>
+        <p>
+          Generate a GitHub Token: See the official documentation 
+          <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank" rel="noopener">
+            here
+          </a>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I configure AWS S3 for Miroli?</h3>
+        <p>
+          Create an S3 Bucket: In the AWS Console, create a new bucket and enable “public access” if needed. 
+          For details, see 
+          <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html" target="_blank" rel="noopener">
+            Hosting a Static Website on Amazon S3
+          </a>.
+        </p>
+        <p>
+          Enable Static Website Hosting: In your S3 bucket settings, enable the “Static website hosting” option and specify your index document as <code>index.html</code>.
+        </p>
+        <p>
+          Manage Access: Adjust the bucket policy to allow public access (if desired) so users can view the site.
+        </p>
+        <p>
+          Get API Access Keys: See 
+          <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html" target="_blank" rel="noopener">
+            Managing Access Keys for IAM Users
+          </a> 
+          for detailed info.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Where can I see all my locally generated pages?</h3>
+        <p>
+          You should be able to see your generated page under <em>Documents/site</em> within the <em>miroli</em> sandbox in the iOS File Manager.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 miroli.app. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
